@@ -1,0 +1,218 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.container{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin: 50px auto;
+
+}
+
+h3{
+    font-family: 'Fjalla One', sans-serif;
+    font-family: 'Kanit', sans-serif;
+    font-family: 'PT Serif', serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Slab', serif;
+    font-family: 'Rubik', sans-serif;
+}
+.div1{
+    width: 100%;
+    max-width: 300px;
+    border: solid 2px wheat;
+    border-radius: 5px;
+    margin-top: 50px;
+}
+.div2{
+    width: 100%;
+    max-width: 300px;
+    border: solid 2px wheat;
+    border-radius: 5px;
+    margin-top: 50px;
+}
+.div3{
+    width: 100%;
+    max-width: 300px;
+    border: solid 2px wheat;
+    border-radius: 5px;
+    margin-top: 50px;
+}
+.div1:hover{
+    box-shadow: 0px 2px 20px #888;
+    transition: all ease 1s;
+}
+.div2:hover{
+    box-shadow: 0px 2px 20px #888;
+    transition: all ease 1s;
+
+}
+.div3:hover{
+    box-shadow: 0px 2px 20px #888;
+    transition: all ease 1s;
+
+}
+.img1{
+    width: 100%;
+}
+.img1 img{
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.div_text{
+    display: flex;
+    flex-direction: column;
+}
+span{
+    padding: 5px 10px;
+    color: #888;
+    font-size: 20px;
+}
+label{
+    padding: 5px 10px;
+    color: black;
+    font-size: 20px;
+    cursor: pointer;
+}
+p{
+    color: #888;
+    font-size: 18px;
+    margin-left: 10px;
+
+}
+.lesson{
+    display: flex;
+    padding: 15px
+}
+.icon2{
+    padding: 0px 40px;
+    color: #888;
+
+}
+.icon{
+    color: #888;
+}
+i{
+    color: red;
+}
+input{
+margin-left: 10px;
+}
+#pop_up{
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: #1a1a1a5b;
+    display: none;
+    animation: go 1s;
+}
+
+.pop_inside{
+   height: 70%;
+   background-color: white;
+   border: solid 2px black;
+   border-radius: 5px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+display: flex;
+flex-direction: column;
+overflow-x: hidden;
+overflow-y: scroll;
+
+}
+
+
+#pop_up .pop_inside label{
+transform: translate(85%,15%);
+font-size: 25px;
+cursor: pointer;
+}
+h3{
+    padding: 10px;
+}
+.des{
+    font-size: 18px;
+    color: #888;
+    padding: 5px;
+text-align: center;
+margin-top: 20px;
+}
+.ok{
+    width: 20%;
+    padding: 5px;
+margin: 10px auto;
+    color: white;
+    background-color: red;
+    border-radius: 5px;
+    box-shadow: 0px 2px 20px #888;
+    cursor: pointer;
+    font-size: 20px;
+}
+.div1 #check:checked ~ #pop_up{
+    display: block;
+}
+.div1 #check :checked ~ #pop_up{
+    display: none;
+}
+.cointer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+column-gap: 20px;
+}
+.div2 #check2:checked ~ #pop_up{
+    display: block;
+}
+.div2 #check2 :checked ~ #pop_up{
+    display: none;
+}
+.div3 #check :checked ~ #pop_up{
+    display: block;
+}
+.div3 #check :checked ~ #pop_up{
+    display: none;
+}
+@keyframes go{
+    0%{
+opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+
+}
+@media(min-width:200px){
+    .cointer{
+      
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+      
+    }
+    .div1{
+        margin: 50px auto;
+    }
+    .div2{
+        margin:-30px auto;
+    }
+    .div3{
+        margin: 50px auto;
+    }
+}
+@media(min-width:600px){
+    .cointer{
+        display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+
+    }
+    
+    .div2{
+        margin: 50px auto;
+    }
+}
